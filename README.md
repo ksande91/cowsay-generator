@@ -1,8 +1,9 @@
-# StartupCow 🐮
+# CowsayGenerator 🐮
 
-StartupCow is a fun and lightweight Go program that generates motivational or humorous quotes using OpenAI's GPT API and displays them with the classic `cowsay` terminal program. It's perfect for brightening your day whenever you open a terminal!
+CowsayGenerator is a fun and lightweight Go program that generates motivational or humorous quotes using OpenAI's GPT API and displays them with the classic `cowsay` terminal program. It's perfect for brightening your day whenever you open a terminal!
 
 ## Features
+
 - 🤖 **AI-Powered Quotes**: Generates unique, funny, or motivational quotes using OpenAI's GPT.
 - 🐄 **Cowsay Integration**: Pairs the generated quotes with the delightful ASCII cows from `cowsay`.
 - 🚀 **Terminal Startup**: Easily set it up to run automatically when you open a terminal.
@@ -12,6 +13,7 @@ StartupCow is a fun and lightweight Go program that generates motivational or hu
 ## Prerequisites
 
 ### 1. **Install Required Tools**
+
 - **Go**: Install [Go](https://go.dev/) (version 1.18 or later).
 - **Cowsay**: Install the `cowsay` program.
   - On Arch Linux:
@@ -28,6 +30,7 @@ StartupCow is a fun and lightweight Go program that generates motivational or hu
     ```
 
 ### 2. **OpenAI API Key**
+
 - Sign up at [OpenAI](https://openai.com/) and get an API key.
 - Add the API key as an environment variable (add to shell config file to persist):
   ```
@@ -39,19 +42,21 @@ StartupCow is a fun and lightweight Go program that generates motivational or hu
 ## Installation
 
 1. **Clone the Repository**
+
    ```
-   git clone https://github.com/your-username/startupcow.git
-   cd startupcow
+   git clone https://github.com/ksande91/cowsay-generator.git
+   cd cowsay-generator
    ```
 
 2. **Build the Program**
+
    ```
-   go build -o startupcow
+   go build -o cowsaygenerator
    ```
 
 3. **Run the Program**
    ```
-   ./startupcow
+   ./cowsaygenerator
    ```
 
 ---
@@ -59,52 +64,73 @@ StartupCow is a fun and lightweight Go program that generates motivational or hu
 ## Usage
 
 ### 1. **Run It Manually**
-From the folder where `startupcow` resides:
+
+From the folder where `cowsaygenerator` resides:
+
 ```
 ./startupcow
 ```
 
 ### 2. **Run It Automatically on Terminal Startup**
+
 To make the program run every time you open a terminal:
 
 #### For **Bash**:
+
 Edit your `~/.bashrc` file:
+
 ```
 nano ~/.bashrc
 ```
+
 Add this line:
+
 ```
-/path/to/startupcow
+/path/to/cowsaygenerator
 ```
+
 Save and reload:
+
 ```
 source ~/.bashrc
 ```
 
 #### For **Zsh**:
+
 Edit your `~/.zshrc` file:
+
 ```
 nano ~/.zshrc
 ```
+
 Add this line:
+
 ```
-/path/to/startupcow
+/path/to/cowsaygenerator
 ```
+
 Save and reload:
+
 ```
 source ~/.zshrc
 ```
 
 #### For **Fish**:
+
 Edit your `~/.config/fish/config.fish` file:
+
 ```
 nano ~/.config/fish/config.fish
 ```
+
 Add this line:
+
 ```
-/path/to/startupcow
+/path/to/cowsaygenerator
 ```
+
 Save and reload:
+
 ```
 source ~/.config/fish/config.fish
 ```
@@ -128,26 +154,6 @@ Here’s what you’ll see when you run the program:
 
 ---
 
-## Troubleshooting
-
-### 1. **OPENAI_API_KEY Not Found**
-Ensure the `OPENAI_API_KEY` environment variable is set:
-```
-export OPENAI_API_KEY=your_api_key_here
-```
-
-### 2. **Cowsay Not Installed**
-Install `cowsay` as mentioned in the [Prerequisites](#prerequisites).
-
-### 3. **Permission Issues**
-Ensure the `startupcow` file is executable:
-```
-chmod +x startupcow
-```
-
----
-
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-

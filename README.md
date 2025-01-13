@@ -68,7 +68,7 @@ CowsayGenerator is a fun and lightweight Go program that generates motivational 
 From the folder where `cowsaygenerator` resides:
 
 ```
-./startupcow
+./cowsaygenerator
 ```
 
 ### 2. **Run It Automatically on Terminal Startup**
